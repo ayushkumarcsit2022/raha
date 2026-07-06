@@ -32,93 +32,113 @@ export default function Learnixa() {
           </div>
         </section>
 
-        {/* Our Services */}
+        {/* Pedagogical Framework */}
+        <section className="py-20 bg-[#efeeeb]/50 px-6 md:px-20 mb-20 md:mb-28">
+          <div className="max-w-[1280px] mx-auto">
+            <div className="mb-16 text-center">
+              <span className="font-inter text-xs text-secondary font-bold uppercase tracking-widest block mb-4">OUR PRINCIPLE</span>
+              <h2 className="font-plus-jakarta text-3xl md:text-4xl font-extrabold text-black">Pedagogical Framework</h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white p-8 rounded-xl border border-black/5">
+                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Adaptive Curriculum</h4>
+                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Curriculum paths adjusted in real-time based on diagnostic performance and user feedback loop.</p>
+              </div>
+              <div className="bg-white p-8 rounded-xl border border-black/5">
+                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Immersive Delivery</h4>
+                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Engaging student workloads featuring high-fidelity labs and 3D simulation training assets.</p>
+              </div>
+              <div className="bg-white p-8 rounded-xl border border-black/5">
+                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Measurable Outcomes</h4>
+                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Transparent dashboard metrics tracing test performance improvements accurately.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* EdTech Ecosystem */}
         <section className="px-6 md:px-20 max-w-[1280px] mx-auto mb-20 md:mb-28">
           <div className="mb-16">
-            <h2 className="font-plus-jakarta text-3xl md:text-4xl font-extrabold text-black mb-4">Our Services</h2>
-            <div className="w-24 h-1 bg-secondary"></div>
+            <span className="font-inter text-xs text-secondary font-bold uppercase tracking-widest block mb-4">DIGITAL PLATFORM</span>
+            <h2 className="font-plus-jakarta text-3xl md:text-4xl font-extrabold text-black">EdTech Ecosystem</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-[#efeeeb] p-8 rounded-xl">
-              <span className="material-symbols-outlined text-4xl text-[#735b28] mb-6">school</span>
-              <h3 className="font-plus-jakarta text-xl font-bold mb-4 text-black">MBBS in India &amp; Abroad</h3>
+              <h3 className="font-plus-jakarta text-xl font-bold mb-4 text-black">Digital Platform</h3>
               <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
-                Expert guidance for medical education seekers in premier domestic and international universities.
+                Cloud infrastructure configured for millions of concurrent student streams and micro-learning modules.
               </p>
             </div>
             <div className="bg-[#efeeeb] p-8 rounded-xl">
-              <span className="material-symbols-outlined text-4xl text-[#735b28] mb-6">psychology</span>
-              <h3 className="font-plus-jakarta text-xl font-bold mb-4 text-black">Career Counseling &amp; Selection</h3>
+              <h3 className="font-plus-jakarta text-xl font-bold mb-4 text-black">LMS Integration</h3>
               <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
-                Personalized student guidance and counselor matchmaking based on academic performance and parameters.
+                Seamless API hookups for legacy campus management software systems.
               </p>
             </div>
             <div className="bg-[#efeeeb] p-8 rounded-xl">
-              <span className="material-symbols-outlined text-4xl text-[#735b28] mb-6">assignment</span>
-              <h3 className="font-plus-jakarta text-xl font-bold mb-4 text-black">Admission Assistance</h3>
+              <h3 className="font-plus-jakarta text-xl font-bold mb-4 text-black">AI Personalization</h3>
               <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
-                Complete and trusted admissions processing with direct coordination from partner universities.
-              </p>
-            </div>
-            <div className="bg-[#efeeeb] p-8 rounded-xl">
-              <span className="material-symbols-outlined text-4xl text-[#735b28] mb-6">description</span>
-              <h3 className="font-plus-jakarta text-xl font-bold mb-4 text-black">Visa &amp; Documentation Support</h3>
-              <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
-                End-to-end documentation preparation, translation, submission, and visa interview training.
-              </p>
-            </div>
-            <div className="bg-[#efeeeb] p-8 rounded-xl">
-              <span className="material-symbols-outlined text-4xl text-[#735b28] mb-6">payments</span>
-              <h3 className="font-plus-jakarta text-xl font-bold mb-4 text-black">Scholarship Guidance</h3>
-              <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
-                Identify and apply for financial aid, fellowships, and academic scholarship opportunities.
-              </p>
-            </div>
-            <div className="bg-[#efeeeb] p-8 rounded-xl">
-              <span className="material-symbols-outlined text-4xl text-[#735b28] mb-6">flight_takeoff</span>
-              <h3 className="font-plus-jakarta text-xl font-bold mb-4 text-black">Pre &amp; Post Arrival Support</h3>
-              <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
-                Comprehensive orientation briefing, local accommodation, airport pickup, and campus integration.
+                Machine learning algorithms mapping content recommendations directly to student profiles.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Why Choose Learnixa */}
-        <section className="bg-[#efeeeb] py-20 md:py-28 px-6 md:px-20">
-          <div className="max-w-[1280px] mx-auto">
-            <div className="mb-16">
-              <span className="font-inter text-xs text-[#735b28] font-bold uppercase tracking-[0.2em] mb-3 block">Why Us</span>
-              <h2 className="font-plus-jakarta text-3xl md:text-4xl font-extrabold text-black">Why Choose Learnixa Education?</h2>
+        {/* Faculty & Advisory */}
+        <section className="bg-black text-white py-28 mb-20 md:mb-28">
+          <div className="px-6 md:px-20 max-w-[1280px] mx-auto">
+            <div className="mb-16 text-center">
+              <span className="font-inter text-xs text-[#fedb9c] font-bold uppercase tracking-widest block mb-4">BOARD OF TRUSTEES</span>
+              <h2 className="font-plus-jakarta text-3xl md:text-5xl font-extrabold text-white">Faculty &amp; Advisory</h2>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-xl border border-black/5">
-                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Expert &amp; Experienced Counselors</h4>
-                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Guidance from industry veterans who understand global educational pathways.</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div className="p-6 border border-white/10 rounded-xl bg-white/5">
+                <div className="font-plus-jakarta text-lg font-bold text-white mb-2">Dr. Helena Vane</div>
+                <div className="font-inter text-xs text-[#fedb9c] uppercase tracking-widest">Medical Academic Dean</div>
               </div>
-              <div className="bg-white p-8 rounded-xl border border-black/5">
-                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Personalized Student Guidance</h4>
-                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Individual profiling based on your score card, goals, and university preferences.</p>
+              <div className="p-6 border border-white/10 rounded-xl bg-white/5">
+                <div className="font-plus-jakarta text-lg font-bold text-white mb-2">Marcus Thorne</div>
+                <div className="font-inter text-xs text-[#fedb9c] uppercase tracking-widest">Curriculum Director</div>
               </div>
-              <div className="bg-white p-8 rounded-xl border border-black/5">
-                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Trusted Admission Process</h4>
-                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">100% transparent documentation, registration, and confirmation procedures.</p>
+              <div className="p-6 border border-white/10 rounded-xl bg-white/5">
+                <div className="font-plus-jakarta text-lg font-bold text-white mb-2">Sarah Lin</div>
+                <div className="font-inter text-xs text-[#fedb9c] uppercase tracking-widest">Global Placements Head</div>
               </div>
-              <div className="bg-white p-8 rounded-xl border border-black/5">
-                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Wide Network of Universities</h4>
-                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Direct relationships with top-tier institutions across India and globally.</p>
-              </div>
-              <div className="bg-white p-8 rounded-xl border border-black/5">
-                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Complete End-to-End Support</h4>
-                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">From initial profile analysis to visa approvals and campus arrival assistance.</p>
-              </div>
-              <div className="bg-white p-8 rounded-xl border border-black/5">
-                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">High Success Rate in Admissions</h4>
-                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Consistent year-on-year placements in premier medical and tech universities.</p>
+              <div className="p-6 border border-white/10 rounded-xl bg-white/5">
+                <div className="font-plus-jakarta text-lg font-bold text-white mb-2">Julian Reed</div>
+                <div className="font-inter text-xs text-[#fedb9c] uppercase tracking-widest">Regulatory Affairs Advisor</div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Partnership Models */}
+        <section className="px-6 md:px-20 max-w-[1280px] mx-auto mb-28">
+          <div className="mb-16">
+            <span className="font-inter text-xs text-secondary font-bold uppercase tracking-widest block mb-4">COLLABORATE WITH US</span>
+            <h2 className="font-plus-jakarta text-3xl md:text-4xl font-extrabold text-black">Partnership Models</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-8 border border-black/5 bg-[#efeeeb] rounded-xl">
+              <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Institutional White-Labeling</h4>
+              <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Customize and brand Learnixa&apos;s adaptive learning engine for your local school network.</p>
+            </div>
+            <div className="p-8 border border-black/5 bg-[#efeeeb] rounded-xl">
+              <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Corporate Skill-Mapping</h4>
+              <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Bridge corporate performance gaps by creating customized skill-mapping courses.</p>
+            </div>
+            <div className="p-8 border border-black/5 bg-[#efeeeb] rounded-xl">
+              <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Consortium Memberships</h4>
+              <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Join our institutional group network to share student placement databases and resources.</p>
+            </div>
+          </div>
+          <div className="mt-12 text-center">
+            <a href="mailto:info@rahagroup.co.in" className="inline-block bg-black text-white font-inter text-xs font-bold uppercase tracking-widest px-12 py-5 rounded-lg hover:bg-[#735b28] transition-all">
+              Partner Inquiry
+            </a>
           </div>
         </section>
       </main>

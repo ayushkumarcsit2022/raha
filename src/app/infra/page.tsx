@@ -14,7 +14,7 @@ export default function Infra() {
             <div 
               className="w-full h-full bg-cover bg-center brightness-[0.8]" 
               style={{
-                backgroundImage: "url('/images/infra.png')",
+                backgroundImage: "url('/images/Raha infra.jpeg')",
               }}
             />
             <div className="absolute inset-0 bg-black/35" />
@@ -23,64 +23,153 @@ export default function Infra() {
           <div className="relative z-10 text-center px-6 md:px-20 max-w-4xl">
             <span className="font-inter text-xs font-bold text-[#fedb9c] uppercase mb-4 block tracking-[0.2em]">Excellence in Structure</span>
             <h1 className="font-plus-jakarta text-4xl md:text-6xl font-extrabold text-white mb-8 leading-tight">
-              Building Trust, Delivering Dreams
+              Building Tomorrow&apos;s Global Landmarks
             </h1>
             <p className="font-inter text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
               Raha Infra is a trusted real estate company committed to delivering premium residential and commercial property solutions. With a customer-centric approach and in-depth market expertise, we help individuals, families, and investors find the right property that matches their needs and long-term goals.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/#contact" className="bg-[#735b28] text-white px-8 py-4 rounded-lg font-inter text-sm font-bold uppercase tracking-widest hover:scale-105 transition-all text-center">
-                Explore Projects
-              </Link>
-              <Link href="/about" className="border border-white text-white px-8 py-4 rounded-lg font-inter text-sm font-bold uppercase tracking-widest hover:bg-white/10 transition-all text-center">
-                Our Vision
-              </Link>
-            </div>
           </div>
         </header>
 
-        {/* Highlights Section */}
+        {/* Signature Landmark Projects */}
         <section className="py-20 md:py-28 bg-[#efeeeb]/50">
           <div className="max-w-[1280px] mx-auto px-6 md:px-20">
             <div className="mb-16 text-center">
-              <span className="font-inter text-xs font-bold text-[#735b28] uppercase block mb-4 tracking-[0.2em]">Core Competencies</span>
+              <span className="font-inter text-xs font-bold text-[#735b28] uppercase block mb-4 tracking-[0.2em]">Portfolios</span>
               <h2 className="font-plus-jakarta text-3xl md:text-4xl font-extrabold text-black">
-                Raha Infra Highlights
+                Signature Landmark Projects
               </h2>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-black/5">
-                <span className="material-symbols-outlined text-3xl text-secondary mb-4">apartment</span>
-                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-2">Residential &amp; Commercial Properties</h4>
-                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Premium housing, office environments, and retail complexes tailored to customer needs.</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Aurelius Hub */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-black/5 flex flex-col">
+                <div className="h-64 w-full bg-cover bg-center" style={{ backgroundImage: "url('/images/infra.png')" }} />
+                <div className="p-8 flex-grow">
+                  <h3 className="font-plus-jakarta font-bold text-black text-xl mb-3">The Aurelius Hub</h3>
+                  <p className="font-inter text-sm text-on-surface-variant leading-relaxed mb-6">
+                    A premier mixed-use commercial space utilizing glass layouts and steel framing. Built for modern enterprise demands.
+                  </p>
+                </div>
               </div>
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-black/5">
-                <span className="material-symbols-outlined text-3xl text-secondary mb-4">real_estate_agent</span>
-                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-2">Property Buying &amp; Selling</h4>
-                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Assisted transactions ensuring absolute transparency and valuation security.</p>
+              {/* Veridian Heights */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-black/5 flex flex-col">
+                <div className="h-64 w-full bg-cover bg-center" style={{ backgroundImage: "url('/images/boardroom.png')" }} />
+                <div className="p-8 flex-grow">
+                  <h3 className="font-plus-jakarta font-bold text-black text-xl mb-3">Veridian Heights</h3>
+                  <p className="font-inter text-sm text-on-surface-variant leading-relaxed mb-6">
+                    A luxury residential complex designed to merge natural park elements with high-end steel structures and private terraces.
+                  </p>
+                </div>
               </div>
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-black/5">
-                <span className="material-symbols-outlined text-3xl text-secondary mb-4">analytics</span>
-                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-2">Investment Advisory</h4>
-                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">High-yield projections backed by real market analytics and portfolio management.</p>
-              </div>
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-black/5">
-                <span className="material-symbols-outlined text-3xl text-secondary mb-4">verified</span>
-                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-2">Verified Property Listings</h4>
-                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Strict regulatory clearance and verification process for listings.</p>
-              </div>
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-black/5">
-                <span className="material-symbols-outlined text-3xl text-secondary mb-4">description</span>
-                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-2">End-to-End Documentation Support</h4>
-                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Complete assistance through registration, clearance, and legal processes.</p>
-              </div>
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-black/5">
-                <span className="material-symbols-outlined text-3xl text-secondary mb-4">support_agent</span>
-                <h4 className="font-plus-jakarta font-bold text-black text-lg mb-2">Customer-Centric Services</h4>
-                <p className="font-inter text-sm text-on-surface-variant leading-relaxed">Dedicated relationship executives managing all touchpoints for absolute comfort.</p>
+              {/* The Onyx Gateway */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-black/5 flex flex-col">
+                <div className="h-64 w-full bg-cover bg-center" style={{ backgroundImage: "url('/images/hero_bg.png')" }} />
+                <div className="p-8 flex-grow">
+                  <h3 className="font-plus-jakarta font-bold text-black text-xl mb-3">The Onyx Gateway</h3>
+                  <p className="font-inter text-sm text-on-surface-variant leading-relaxed mb-6">
+                    Our latest architectural landmark. A dual-tower corporate headquarters optimized for digital scale and smart grid controls.
+                  </p>
+                </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Quality Control / Zero Tolerance */}
+        <section className="py-20 md:py-28 px-6 md:px-20 max-w-[1280px] mx-auto">
+          <div className="mb-16">
+            <span className="font-inter text-xs text-secondary font-bold uppercase tracking-widest block mb-4">ENGINEERING PROTOCOL</span>
+            <h2 className="font-plus-jakarta text-3xl md:text-4xl font-extrabold text-black">
+              Zero Tolerance for Compromise: Precision Engineering Reimagined
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-[#efeeeb] p-8 rounded-xl">
+              <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Quality Control Protocol</h4>
+              <p className="font-inter text-xs text-on-surface-variant leading-relaxed">
+                Multi-stage inspections mapping materials back to verified supply sources.
+              </p>
+            </div>
+            <div className="bg-[#efeeeb] p-8 rounded-xl">
+              <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Unrivaled Site Safety</h4>
+              <p className="font-inter text-xs text-on-surface-variant leading-relaxed">
+                Class-leading safety procedures resulting in zero accident incidents across operations.
+              </p>
+            </div>
+            <div className="bg-[#efeeeb] p-8 rounded-xl">
+              <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">Structural Innovation</h4>
+              <p className="font-inter text-xs text-on-surface-variant leading-relaxed">
+                Utilizing advanced seismic dampening and wind-resistant framing structures.
+              </p>
+            </div>
+            <div className="bg-[#efeeeb] p-8 rounded-xl">
+              <h4 className="font-plus-jakarta font-bold text-black text-lg mb-3">LEED Platinum Target</h4>
+              <p className="font-inter text-xs text-on-surface-variant leading-relaxed">
+                Aiming for premium environmental certificates on all new high-rise builds.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Sustainability Section */}
+        <section className="bg-black text-white py-28 text-center">
+          <div className="px-6 max-w-4xl mx-auto">
+            <span className="font-inter text-xs font-bold text-[#fedb9c] uppercase tracking-widest block mb-6">ENVIRONMENTAL ETHOS</span>
+            <h2 className="font-plus-jakarta text-3xl md:text-5xl font-extrabold text-white mb-8 leading-tight">
+              Sustainability Embedded in Every Grain
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mt-12">
+              <div className="p-8 border border-white/10 rounded-xl">
+                <h4 className="font-plus-jakarta text-lg font-bold text-[#fedb9c] mb-3">Regenerative Material Sourcing</h4>
+                <p className="font-inter text-sm text-white/70">Using local supply chains, recycled aggregates, and low-carbon cement options.</p>
+              </div>
+              <div className="p-8 border border-white/10 rounded-xl">
+                <h4 className="font-plus-jakarta text-lg font-bold text-[#fedb9c] mb-3">Passive Energy Systems</h4>
+                <p className="font-inter text-sm text-white/70">Integrating thermal mass storage and natural ventilation layouts to minimize operational loads.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Leadership Highlight (Marcus Thorne) */}
+        <section className="py-20 md:py-28 px-6 md:px-20 max-w-[1280px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <div className="md:col-span-5 relative">
+              <div className="aspect-[4/5] rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-xl">
+                <div 
+                  className="w-full h-full bg-cover bg-center" 
+                  style={{ 
+                    backgroundImage: "url('/images/chairman.png')", // using chairman image as placeholders for secondary leaders
+                  }}
+                />
+              </div>
+              <div className="absolute -bottom-4 -right-4 bg-secondary px-6 py-3 text-white font-inter text-xs font-bold uppercase tracking-wider">
+                PROJECT DIRECTOR
+              </div>
+            </div>
+            <div className="md:col-span-6 md:col-start-8">
+              <span className="material-symbols-outlined text-6xl text-[#735b28] mb-6">format_quote</span>
+              <blockquote className="font-plus-jakarta text-2xl font-bold leading-tight mb-8 text-black">
+                &quot;True luxury in civil architecture resides in the absolute safety of structural integrity. We construct environments that will stand as legacy landmarks.&quot;
+              </blockquote>
+              <div className="h-px w-20 bg-black mb-4"></div>
+              <p className="font-plus-jakarta text-xl font-bold text-black">Marcus Thorne</p>
+              <p className="font-inter text-xs text-on-surface-variant uppercase tracking-widest mt-1">Project Director, Raha Infra</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Project Contact Inquiry */}
+        <section className="bg-[#efeeeb] py-20 text-center">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="font-plus-jakarta text-3xl font-extrabold text-black mb-6">Ready to Build The Future?</h2>
+            <p className="font-inter text-sm text-on-surface-variant mb-8 leading-relaxed">
+              Connect with our structural engineering team to inquire about commercial leases, residential investments, or customized build-to-suit requests.
+            </p>
+            <a href="mailto:info@rahagroup.co.in" className="inline-block bg-black text-white font-inter text-xs font-bold uppercase tracking-widest px-12 py-5 rounded-lg hover:bg-[#735b28] transition-all">
+              Inquire Now
+            </a>
           </div>
         </section>
       </main>

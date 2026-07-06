@@ -80,7 +80,7 @@ export default function Home() {
                 <div 
                   className="w-full h-full bg-cover bg-center" 
                   style={{ 
-                    backgroundImage: "url('/images/boardroom.png')",
+                    backgroundImage: "url('/images/Raha group.jpeg')",
                   }}
                 />
               </div>
@@ -115,6 +115,38 @@ export default function Home() {
           </div>
         </section>
 
+        
+        {/* Core Principles (New Section) */}
+        <section className="py-28 px-20 max-w-[1280px] mx-auto border-t border-black/5">
+          <div className="text-center mb-20 animate-fade-up">
+            <span className="font-inter text-xs font-bold text-secondary uppercase tracking-widest mb-4 block">GUIDING ETHOS</span>
+            <h2 className="font-plus-jakarta text-4xl font-extrabold text-black">Core Principles</h2>
+          </div>
+          <div className="grid grid-cols-3 gap-8">
+            <div className="p-8 border border-black/5 rounded-xl hover:bg-[#efeeeb] transition-colors group">
+              <span className="material-symbols-outlined text-[#735b28] text-4xl mb-6">update</span>
+              <h4 className="font-plus-jakarta text-xl font-bold mb-4 text-black">Long-Term Thinking</h4>
+              <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
+                We prioritize legacy over quick wins, investing in assets that provide value for decades to come.
+              </p>
+            </div>
+            <div className="p-8 border border-black/5 rounded-xl hover:bg-[#efeeeb] transition-colors group">
+              <span className="material-symbols-outlined text-[#735b28] text-4xl mb-6">visibility</span>
+              <h4 className="font-plus-jakarta text-xl font-bold mb-4 text-black">Absolute Transparency</h4>
+              <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
+                Radical honesty in governance and reporting ensures trust with stakeholders and partners.
+              </p>
+            </div>
+            <div className="p-8 border border-black/5 rounded-xl hover:bg-[#efeeeb] transition-colors group">
+              <span className="material-symbols-outlined text-[#735b28] text-4xl mb-6">precision_manufacturing</span>
+              <h4 className="font-plus-jakarta text-xl font-bold mb-4 text-black">Structural Integrity</h4>
+              <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
+                Quality is non-negotiable. From steel beams to digital code, we build with uncompromising precision.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Desktop Verticals Section */}
         <section id="verticals-desktop" className="bg-[#efeeeb] py-28">
           <div className="px-20 max-w-[1280px] mx-auto space-y-32">
@@ -124,7 +156,7 @@ export default function Home() {
                 <div 
                   className="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-500" 
                   style={{ 
-                    backgroundImage: "url('/images/infra.png')",
+                    backgroundImage: "url('/images/Raha infra.jpeg')",
                   }}
                 />
               </div>
@@ -229,6 +261,45 @@ export default function Home() {
           </div>
         </section>
 
+        
+        {/* Strategic Market Opportunities (New Section) */}
+        <section className="py-28 bg-[#1a1c1a] text-white">
+          <div className="px-20 max-w-[1280px] mx-auto grid grid-cols-12 gap-12">
+            <div className="col-span-4">
+              <h2 className="font-plus-jakarta text-4xl font-extrabold mb-8 leading-tight text-white">Strategic Market Opportunities</h2>
+              <p className="font-inter text-base text-white/70 mb-10 leading-relaxed">
+                Identifying high-growth sectors where Raha&apos;s structural excellence creates outsized value.
+              </p>
+              <Link href="/#contact" className="text-[#fedb9c] font-inter text-sm font-bold border-b border-[#fedb9c] pb-1 hover:text-white transition-colors">
+                Request Insight Report
+              </Link>
+            </div>
+            <div className="col-span-7 col-start-6 space-y-6">
+              <div className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-white/30 transition-all">
+                <div className="flex justify-between items-start mb-4">
+                  <h4 className="font-plus-jakarta text-xl font-bold text-white">Emerging Markets Infrastructure</h4>
+                  <span className="text-[#fedb9c] text-xs font-inter font-bold uppercase tracking-widest">High Priority</span>
+                </div>
+                <p className="font-inter text-sm text-white/60">Bridging the logistics gap in rapid-growth urban corridors across Southeast Asia and MENA.</p>
+              </div>
+              <div className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-white/30 transition-all">
+                <div className="flex justify-between items-start mb-4">
+                  <h4 className="font-plus-jakarta text-xl font-bold text-white">Renewable Grid Resilience</h4>
+                  <span className="text-[#fedb9c] text-xs font-inter font-bold uppercase tracking-widest">Growth Sector</span>
+                </div>
+                <p className="font-inter text-sm text-white/60">Structural storage solutions for decentralized energy systems.</p>
+              </div>
+              <div className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-white/30 transition-all">
+                <div className="flex justify-between items-start mb-4">
+                  <h4 className="font-plus-jakarta text-xl font-bold text-white">AI-Native Governance</h4>
+                  <span className="text-[#fedb9c] text-xs font-inter font-bold uppercase tracking-widest">Strategic Asset</span>
+                </div>
+                <p className="font-inter text-sm text-white/60">Developing proprietary digital frameworks for institutional asset management.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Desktop Goals Section */}
         <section className="bg-black text-white py-28">
           <div className="px-20 max-w-[1280px] mx-auto grid grid-cols-12 gap-12">
@@ -301,7 +372,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-3 gap-8">
               <div className="glass-card p-10 rounded-xl">
-                <span className="material-symbols-outlined text-[#fedb9c] text-4xl mb-6">bolt</span>
+                <img src="/images/Raha Energy Logo .png" alt="Raha Energy Logo" className="h-12 w-auto mb-6 object-contain" />
                 <h4 className="font-plus-jakarta text-xl font-bold text-white mb-4">Raha Energy ⚡</h4>
                 <p className="text-white/70 font-inter text-sm leading-relaxed">Expanding reliable energy solutions with a focus on innovation, efficiency, and nationwide accessibility.</p>
               </div>
@@ -341,9 +412,22 @@ export default function Home() {
                 &quot;Real excellence isn&apos;t just about the structure we build; it&apos;s about the standard we set for the entire industry. We build for the next century.&quot;
               </blockquote>
               <div className="h-px w-20 bg-black mb-4"></div>
-              <p className="font-plus-jakarta text-xl font-bold text-black">Zeeshan Raha</p>
+              <p className="font-plus-jakarta text-xl font-bold text-black">Rahul Kumar</p>
               <p className="font-inter text-xs text-on-surface-variant uppercase tracking-widest mt-1">Group Chairman &amp; CEO, Raha Group</p>
             </div>
+
+            <div className="hidden lg:block lg:col-span-4 lg:col-start-9">
+              <div className="bg-[#efeeeb] p-8 rounded-xl border border-black/5">
+                <h5 className="font-plus-jakarta text-sm font-bold text-black mb-4 uppercase tracking-wider">Letter to Investors</h5>
+                <p className="font-inter text-sm text-on-surface-variant italic mb-6">
+                  &quot;In a world obsessed with the immediate, our value lies in the durable...&quot;
+                </p>
+                <Link href="/about" className="text-secondary font-inter text-xs font-bold flex items-center hover:underline">
+                  Read Full Statement <span className="material-symbols-outlined ml-2 text-xs">open_in_new</span>
+                </Link>
+              </div>
+            </div>
+
           </div>
         </section>
 
@@ -423,7 +507,7 @@ export default function Home() {
                 <div 
                   className="w-full aspect-[4/3] rounded-xl overflow-hidden bg-cover bg-center shadow-lg"
                   style={{
-                    backgroundImage: "url('/images/boardroom.png')",
+                    backgroundImage: "url('/images/Raha group.jpeg')",
                   }}
                 />
               </div>
@@ -455,6 +539,38 @@ export default function Home() {
           </div>
         </section>
 
+        
+        {/* Core Principles Mobile (New Section) */}
+        <section className="py-12 bg-white border-t border-black/5">
+          <div className="container mx-auto px-6 text-center mb-10">
+            <span className="font-inter text-xs text-[#735b28] font-bold uppercase tracking-widest mb-3 block">GUIDING ETHOS</span>
+            <h2 className="font-plus-jakarta text-2xl font-extrabold text-black">Core Principles</h2>
+          </div>
+          <div className="container mx-auto px-6 flex flex-col gap-6">
+            <div className="p-6 border border-black/5 rounded-xl">
+              <span className="material-symbols-outlined text-[#735b28] text-3xl mb-4">update</span>
+              <h4 className="font-plus-jakarta text-lg font-bold mb-2 text-black">Long-Term Thinking</h4>
+              <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
+                We prioritize legacy over quick wins, investing in assets that provide value for decades to come.
+              </p>
+            </div>
+            <div className="p-6 border border-black/5 rounded-xl">
+              <span className="material-symbols-outlined text-[#735b28] text-3xl mb-4">visibility</span>
+              <h4 className="font-plus-jakarta text-lg font-bold mb-2 text-black">Absolute Transparency</h4>
+              <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
+                Radical honesty in governance and reporting ensures trust with stakeholders and partners.
+              </p>
+            </div>
+            <div className="p-6 border border-black/5 rounded-xl">
+              <span className="material-symbols-outlined text-[#735b28] text-3xl mb-4">precision_manufacturing</span>
+              <h4 className="font-plus-jakarta text-lg font-bold mb-2 text-black">Structural Integrity</h4>
+              <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
+                Quality is non-negotiable. From steel beams to digital code, we build with uncompromising precision.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Mobile Business Verticals */}
         <section id="verticals-mobile" className="py-12 bg-[#efeeeb]">
           <div className="container mx-auto px-6 text-center mb-10">
@@ -467,7 +583,7 @@ export default function Home() {
               <div 
                 className="h-64 w-full bg-cover bg-center"
                 style={{
-                  backgroundImage: "url('/images/infra.png')",
+                  backgroundImage: "url('/images/Raha infra.jpeg')",
                 }}
               />
               <div className="p-8">
@@ -599,6 +715,32 @@ export default function Home() {
           </div>
         </section>
 
+        
+        {/* Strategic Market Opportunities Mobile (New Section) */}
+        <section className="py-12 bg-[#1a1c1a] text-white">
+          <div className="container mx-auto px-6 mb-10">
+            <span className="font-inter text-xs text-[#fedb9c] font-bold uppercase tracking-widest mb-3 block">Market Insight</span>
+            <h2 className="font-plus-jakarta text-2xl font-extrabold text-white leading-tight">Strategic Market Opportunities</h2>
+            <p className="font-inter text-sm text-white/70 leading-relaxed mt-4">
+              Identifying high-growth sectors where Raha&apos;s structural excellence creates outsized value.
+            </p>
+          </div>
+          <div className="container mx-auto px-6 flex flex-col gap-6">
+            <div className="p-6 border border-white/10 rounded-xl bg-white/5">
+              <h4 className="font-plus-jakarta text-lg font-bold mb-2 text-white">Emerging Markets Infrastructure</h4>
+              <p className="font-inter text-sm text-white/60">Bridging the logistics gap in rapid-growth urban corridors across Southeast Asia and MENA.</p>
+            </div>
+            <div className="p-6 border border-white/10 rounded-xl bg-white/5">
+              <h4 className="font-plus-jakarta text-lg font-bold mb-2 text-white">Renewable Grid Resilience</h4>
+              <p className="font-inter text-sm text-white/60">Structural storage solutions for decentralized energy systems.</p>
+            </div>
+            <div className="p-6 border border-white/10 rounded-xl bg-white/5">
+              <h4 className="font-plus-jakarta text-lg font-bold mb-2 text-white">AI-Native Governance</h4>
+              <p className="font-inter text-sm text-white/60">Developing proprietary digital frameworks for institutional asset management.</p>
+            </div>
+          </div>
+        </section>
+
         {/* Mobile The Raha Alpha (Market Insights) */}
         <section className="py-12 bg-black text-white" id="investment-mobile">
           <div className="container mx-auto px-6">
@@ -637,8 +779,8 @@ export default function Home() {
               <p className="font-inter text-sm text-white/60">Exploring the next wave of roadmaps.</p>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="glass-card p-6 rounded-xl text-center">
-                <span className="material-symbols-outlined text-[#fedb9c] text-3xl mb-4">bolt</span>
+              <div className="glass-card p-6 rounded-xl text-center flex flex-col items-center justify-center">
+                <img src="/images/Raha Energy Logo .png" alt="Raha Energy Logo" className="h-10 w-auto mb-4 object-contain" />
                 <h5 className="font-inter text-xs font-bold uppercase tracking-wider text-white">Raha Energy ⚡</h5>
               </div>
               <div className="glass-card p-6 rounded-xl text-center">
@@ -671,7 +813,7 @@ export default function Home() {
                   &quot;Real excellence isn&apos;t just about the structure we build; it&apos;s about the standard we set for the entire industry. We build for the next century.&quot;
                 </blockquote>
                 <div className="h-px w-20 bg-[#735b28] mb-4" />
-                <h4 className="font-plus-jakarta text-lg font-bold text-black">Zeeshan Raha</h4>
+                <h4 className="font-plus-jakarta text-lg font-bold text-black">Rahul Kumar</h4>
                 <p className="text-[#735b28] font-inter text-xs uppercase tracking-widest mt-1">Group Chairman &amp; CEO</p>
               </div>
             </div>

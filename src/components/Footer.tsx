@@ -1,11 +1,62 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  // Dynamic logo selection based on active route path
+  const getLogoDetails = () => {
+    switch (pathname) {
+      case "/infra":
+        return {
+          src: "/images/Raha infra.jpeg",
+          alt: "Raha Infra Logo",
+          invertible: false,
+        };
+      case "/energy":
+        return {
+          src: "/images/Raha Energy Logo .png",
+          alt: "Raha Energy Logo",
+          invertible: true,
+        };
+      case "/learnixa":
+        return {
+          src: "/images/Learnixa.jpeg",
+          alt: "Learnixa Logo",
+          invertible: false,
+        };
+      case "/bigthink":
+        return {
+          src: "/images/Big think.jpeg",
+          alt: "Big Think Logo",
+          invertible: false,
+        };
+      default:
+        return {
+          src: "/images/Raha Group Logo .png",
+          alt: "Raha Group Logo",
+          invertible: true,
+        };
+    }
+  };
+
+  const currentLogo = getLogoDetails();
+
   return (
     <footer className="bg-[#2f312f] text-white py-20 border-t border-white/10">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 px-6 md:px-20 w-full max-w-[1280px] mx-auto">
         <div className="md:col-span-4 mb-8 md:mb-0">
-          <div className="font-plus-jakarta text-[32px] font-extrabold text-white mb-6">RAHA GROUP</div>
+          <div className="flex items-center mb-6">
+            <div className={`transition-all duration-300 ${!currentLogo.invertible ? "bg-white p-2 rounded-lg shadow-md" : ""}`}>
+              <img 
+                src={currentLogo.src} 
+                alt={currentLogo.alt} 
+                className="h-12 w-auto object-contain" 
+              />
+            </div>
+          </div>
           <p className="font-inter text-sm text-white/60 max-w-xs leading-relaxed mb-4">
             A global conglomerate dedicated to industrial prestige and architectural excellence across the physical and digital world.
           </p>
