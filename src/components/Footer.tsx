@@ -94,11 +94,8 @@ export default function Footer() {
         </div>
 
         <div className="md:col-span-2 mt-8 md:mt-0">
-          <h5 className="font-inter text-xs font-bold text-white mb-6 uppercase tracking-widest">Global HQ</h5>
-          <p className="font-inter text-sm text-white/50 leading-relaxed">
-            101 Financial District, Tower A<br />Metropolis City, 4500-11
-          </p>
-          <div className="mt-8 flex gap-4">
+          <h5 className="font-inter text-xs font-bold text-white mb-6 uppercase tracking-widest">Connect</h5>
+          <div className="flex gap-4">
             <a href="https://www.rahagroup.co.in" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-white/10 transition-all">
               <span className="material-symbols-outlined text-sm">link</span>
             </a>

@@ -885,17 +885,6 @@ export default function Home() {
               
               <div className="space-y-8">
                 <div className="flex gap-4 items-start">
-                  <span className="material-symbols-outlined text-[#735b28] text-2xl">location_on</span>
-                  <div>
-                    <h4 className="font-plus-jakarta text-sm font-bold text-black uppercase tracking-wider mb-1">Corporate Headquarters</h4>
-                    <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
-                      Raha Group, 12th Floor, Tower B, <br />
-                      Premium Business Park, New Delhi, India
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4 items-start">
                   <span className="material-symbols-outlined text-[#735b28] text-2xl">mail</span>
                   <div>
                     <h4 className="font-plus-jakarta text-sm font-bold text-black uppercase tracking-wider mb-1">Inquiries &amp; Support</h4>
@@ -909,9 +898,9 @@ export default function Home() {
                   <span className="material-symbols-outlined text-[#735b28] text-2xl">phone</span>
                   <div>
                     <h4 className="font-plus-jakarta text-sm font-bold text-black uppercase tracking-wider mb-1">Direct Line</h4>
-                    <p className="font-inter text-sm text-on-surface-variant font-medium">
-                      +91 (011) 4567-8900
-                    </p>
+                    <a href="tel:+918651201033" className="font-inter text-sm text-[#735b28] hover:underline font-medium">
+                      +91 8651201033
+                    </a>
                   </div>
                 </div>
               </div>
