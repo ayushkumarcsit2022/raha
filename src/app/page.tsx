@@ -312,12 +312,7 @@ export default function Home() {
               <p className="font-inter text-xs font-bold text-[#bac7e2] mb-4 uppercase tracking-[0.2em]">Future Roadmaps</p>
               <h2 className="font-plus-jakarta text-4xl font-extrabold text-white">Future Expansion</h2>
             </div>
-            <div className="grid grid-cols-3 gap-8">
-              <div className="glass-card p-10 rounded-xl">
-                <span className="material-symbols-outlined text-[#fedb9c] text-4xl mb-6">bolt</span>
-                <h4 className="font-plus-jakarta text-xl font-bold text-white mb-4">Raha Energy ⚡</h4>
-                <p className="text-white/70 font-inter text-sm leading-relaxed">Expanding reliable energy solutions with a focus on innovation, efficiency, and nationwide accessibility.</p>
-              </div>
+             <div className="grid grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div className="glass-card p-10 rounded-xl">
                 <span className="material-symbols-outlined text-[#fedb9c] text-4xl mb-6">groups</span>
                 <h4 className="font-plus-jakarta text-xl font-bold text-white mb-4">Raha Manpower 👷</h4>
@@ -381,7 +376,7 @@ export default function Home() {
             </p>
             <div className="flex gap-4 justify-center">
               <a 
-                href="mailto:Rahagroupadmin@gmail.com" 
+                href={`mailto:${content.footer.delhiEmail}`} 
                 className="bg-[#fedb9c] text-black px-10 py-4 rounded-lg font-inter text-sm font-bold hover:scale-105 transition-all text-center"
               >
                 Start a Conversation
@@ -749,11 +744,6 @@ export default function Home() {
               <h2 className="font-plus-jakarta text-2xl font-bold text-white mb-2">Future Expansion</h2>
             </div>
             <div className="flex flex-col gap-6">
-              <div className="glass-card p-6 rounded-xl text-center flex flex-col items-center justify-center">
-                <span className="material-symbols-outlined text-[#fedb9c] text-3xl mb-4">bolt</span>
-                <h5 className="font-inter text-sm font-bold uppercase tracking-wider text-white">Raha Energy ⚡</h5>
-                <p className="text-white/70 font-inter text-xs leading-relaxed mt-2">Expanding reliable energy solutions with a focus on innovation, efficiency, and nationwide accessibility.</p>
-              </div>
               <div className="glass-card p-6 rounded-xl text-center">
                 <span className="material-symbols-outlined text-[#fedb9c] text-3xl mb-4">groups_3</span>
                 <h5 className="font-inter text-sm font-bold uppercase tracking-wider text-white">Raha Manpower 👷</h5>
@@ -802,7 +792,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col gap-4">
               <a 
-                href="mailto:Rahagroupadmin@gmail.com" 
+                href={`mailto:${content.footer.delhiEmail}`} 
                 className="bg-[#fedb9c] text-black px-8 py-4 rounded-lg font-bold font-inter uppercase text-xs tracking-widest text-center"
               >
                 Start a Conversation
@@ -839,8 +829,8 @@ export default function Home() {
                   <span className="material-symbols-outlined text-[#735b28] text-2xl">mail</span>
                   <div>
                     <h4 className="font-plus-jakarta text-sm font-bold text-black uppercase tracking-wider mb-1">Inquiries &amp; Support</h4>
-                    <a href="mailto:Rahagroupadmin@gmail.com" className="font-inter text-sm text-[#735b28] hover:underline font-medium">
-                      Rahagroupadmin@gmail.com
+                    <a href={`mailto:${content.footer.delhiEmail}`} className="font-inter text-sm text-[#735b28] hover:underline font-medium">
+                      {content.footer.delhiEmail}
                     </a>
                   </div>
                 </div>
@@ -849,8 +839,8 @@ export default function Home() {
                   <span className="material-symbols-outlined text-[#735b28] text-2xl">phone</span>
                   <div>
                     <h4 className="font-plus-jakarta text-sm font-bold text-black uppercase tracking-wider mb-1">Direct Line</h4>
-                    <a href="tel:+918651201033" className="font-inter text-sm text-[#735b28] hover:underline font-medium">
-                      +91 8651201033
+                    <a href={`tel:${content.footer.delhiPhone}`} className="font-inter text-sm text-[#735b28] hover:underline font-medium">
+                      {content.footer.delhiPhone}
                     </a>
                   </div>
                 </div>
@@ -860,7 +850,7 @@ export default function Home() {
                   <div>
                     <h4 className="font-plus-jakarta text-sm font-bold text-black uppercase tracking-wider mb-1">Office Address</h4>
                     <p className="font-inter text-sm text-[#735b28] font-medium leading-relaxed">
-                      A-42, Street No. 2, Near Bikaner Sweet Corner, Nirman Vihar, Delhi
+                      {content.footer.delhiAddress}
                     </p>
                   </div>
                 </div>

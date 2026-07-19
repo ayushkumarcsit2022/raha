@@ -8,7 +8,7 @@ export default function Footer() {
   const pathname = usePathname();
   const [footerContent, setFooterContent] = useState({
     delhiAddress: "A-42, Street No. 2, Near Bikaner Sweet Corner, Nirman Vihar, Delhi",
-    delhiEmail: "Rahagroupadmin@gmail.com",
+    delhiEmail: "Rahagroup.admin@gmail.com",
     delhiPhone: "+91 8651201033",
     delhiWeb: "www.rahagroup.co.in",
     missionText: "To consistently deliver high-quality solutions through professionalism, transparency, and deep market understanding, enabling our clients to achieve their long-term goals.",
