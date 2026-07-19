@@ -22,12 +22,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Our Vision", href: "/" },
-    { name: "About Us", href: "/about" },
-    { name: "Learnixa EdTech", href: "/learnixa" },
-    { name: "Raha Infra", href: "/infra" },
+    { name: "Home", href: "/" },
     { name: "Raha Energy", href: "/energy" },
-    { name: "Big Think Tech", href: "/bigthink" },
+    { name: "Raha Infra", href: "/infra" },
+    { name: "Learnixa", href: "/learnixa" },
+    { name: "Big Think", href: "/bigthink" },
   ];
 
   // Dynamic logo selection based on active route path
@@ -108,19 +107,8 @@ export default function Navbar() {
           })}
         </div>
 
-        {/* Action Button & Mobile Menu Toggle */}
+        {/* Mobile Menu Toggle */}
         <div className="flex items-center gap-4">
-          <Link
-            href="/contact"
-            className={`hidden sm:inline-block px-6 py-2.5 rounded-lg font-inter text-sm font-semibold transition-all ${
-              shouldShowScrolled
-                ? "bg-primary text-white hover:bg-primary/90"
-                : "bg-white text-primary hover:bg-white/90"
-            }`}
-          >
-            Contact Us
-          </Link>
-          
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden flex items-center justify-center p-2 rounded-lg"

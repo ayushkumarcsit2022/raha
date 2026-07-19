@@ -305,27 +305,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Desktop Future Section */}
-        <section className="bg-[#0e1c30] text-white py-28 relative overflow-hidden">
-          <div className="px-20 max-w-[1280px] mx-auto relative z-10">
-            <div className="text-center mb-24">
-              <p className="font-inter text-xs font-bold text-[#bac7e2] mb-4 uppercase tracking-[0.2em]">Future Roadmaps</p>
-              <h2 className="font-plus-jakarta text-4xl font-extrabold text-white">Future Expansion</h2>
-            </div>
-             <div className="grid grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="glass-card p-10 rounded-xl">
-                <span className="material-symbols-outlined text-[#fedb9c] text-4xl mb-6">groups</span>
-                <h4 className="font-plus-jakarta text-xl font-bold text-white mb-4">Raha Manpower 👷</h4>
-                <p className="text-white/70 font-inter text-sm leading-relaxed">Building a trusted workforce solutions platform by connecting skilled professionals with leading organizations.</p>
-              </div>
-              <div className="glass-card p-10 rounded-xl">
-                <span className="material-symbols-outlined text-[#fedb9c] text-4xl mb-6">wb_sunny</span>
-                <h4 className="font-plus-jakarta text-xl font-bold text-white mb-4">Raha Solar ☀</h4>
-                <p className="text-white/70 font-inter text-sm leading-relaxed">Driving India&apos;s clean energy transition through advanced solar solutions for residential and commercial sectors.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* Desktop Leadership Section */}
         <section className="py-28 px-20 max-w-[1280px] mx-auto" id="investor">
@@ -737,26 +717,7 @@ export default function Home() {
         </section>
 
         {/* Mobile Future Frontiers (Roadmaps) */}
-        <section className="py-12 bg-[#0a1120] text-white">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-10">
-              <span className="font-inter text-xs text-[#fedb9c] font-bold uppercase tracking-widest mb-3 block">Future Roadmaps</span>
-              <h2 className="font-plus-jakarta text-2xl font-bold text-white mb-2">Future Expansion</h2>
-            </div>
-            <div className="flex flex-col gap-6">
-              <div className="glass-card p-6 rounded-xl text-center">
-                <span className="material-symbols-outlined text-[#fedb9c] text-3xl mb-4">groups_3</span>
-                <h5 className="font-inter text-sm font-bold uppercase tracking-wider text-white">Raha Manpower 👷</h5>
-                <p className="text-white/70 font-inter text-xs leading-relaxed mt-2">Building a trusted workforce solutions platform by connecting skilled professionals with leading organizations.</p>
-              </div>
-              <div className="glass-card p-6 rounded-xl text-center">
-                <span className="material-symbols-outlined text-[#fedb9c] text-3xl mb-4">solar_power</span>
-                <h5 className="font-inter text-sm font-bold uppercase tracking-wider text-white">Raha Solar ☀</h5>
-                <p className="text-white/70 font-inter text-xs leading-relaxed mt-2">Driving India&apos;s clean energy transition through advanced solar solutions for residential and commercial sectors.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* Mobile Leadership Section */}
         <section className="py-12 bg-[#efeeeb]" id="leadership-mobile">

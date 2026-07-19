@@ -8,7 +8,7 @@ export default function Footer() {
   const pathname = usePathname();
   const [footerContent, setFooterContent] = useState({
     delhiAddress: "A-42, Street No. 2, Near Bikaner Sweet Corner, Nirman Vihar, Delhi",
-    delhiEmail: "Rahagroup.admin@gmail.com",
+    delhiEmail: "rahagroup.admin@gmail.com",
     delhiPhone: "+91 8651201033",
     delhiWeb: "www.rahagroup.co.in",
     missionText: "To consistently deliver high-quality solutions through professionalism, transparency, and deep market understanding, enabling our clients to achieve their long-term goals.",
@@ -67,8 +67,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-dark-bg text-white/90 py-12 border-t border-white/10">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 px-6 md:px-20 w-full max-w-[1280px] mx-auto">
-        <div className="md:col-span-4 flex flex-col justify-between">
+      <div className="grid grid-cols-1 sm:grid-cols-12 gap-8 px-6 md:px-20 w-full max-w-[1280px] mx-auto">
+        <div className="sm:col-span-12 lg:col-span-4 flex flex-col space-y-6">
           <div>
             <div className="flex items-center mb-4">
               <img 
@@ -101,7 +101,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="md:col-span-4">
+        <div className="sm:col-span-12 lg:col-span-4">
           <h5 className="font-inter text-xs font-bold text-white mb-4 uppercase tracking-widest border-b border-white/10 pb-2">Our Mission &amp; Vision</h5>
           <div className="space-y-4">
             <div>
@@ -119,7 +119,7 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="col-span-6 md:col-span-2">
+        <div className="col-span-6 sm:col-span-6 lg:col-span-2">
           <h5 className="font-inter text-xs font-bold text-white mb-4 uppercase tracking-widest border-b border-white/10 pb-2">Links</h5>
           <ul className="space-y-3 font-inter text-xs text-white/50">
             <li><Link href="/#pillars" className="hover:text-white transition-colors">Strategic Pillars</Link></li>
@@ -129,7 +129,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="col-span-6 md:col-span-2">
+        <div className="col-span-6 sm:col-span-6 lg:col-span-2">
           <h5 className="font-inter text-xs font-bold text-white mb-4 uppercase tracking-widest border-b border-white/10 pb-2">Connect</h5>
           <div className="flex gap-3">
             <a href={`https://${footerContent.delhiWeb}`} target="_blank" rel="noopener noreferrer" className="w-8 h-8 border border-white/20 rounded-full flex items-center justify-center hover:bg-white/10 transition-all" title="Website">
