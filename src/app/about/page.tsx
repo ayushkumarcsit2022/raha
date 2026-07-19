@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <>
+    <div className="theme-default">
       <Navbar />
       
       <main className="pt-24 md:pt-32">
@@ -148,6 +148,6 @@ export default function About() {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }

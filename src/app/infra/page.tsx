@@ -1,10 +1,12 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { getSiteContent } from "@/lib/getContent";
 
 export default function Infra() {
+  const content = getSiteContent();
   return (
-    <>
+    <div className="theme-infra">
       <Navbar />
       
       <main className="pt-24 md:pt-32">
@@ -21,12 +23,12 @@ export default function Infra() {
           </div>
           
           <div className="relative z-10 text-center px-6 md:px-20 max-w-4xl">
-            <span className="font-inter text-xs font-bold text-[#fedb9c] uppercase mb-4 block tracking-[0.2em]">Excellence in Structure</span>
+            <span className="font-inter text-xs font-bold text-[#fedb9c] uppercase mb-4 block tracking-[0.2em]">{content.infra.heroTagline}</span>
             <h1 className="font-plus-jakarta text-4xl md:text-6xl font-extrabold text-white mb-8 leading-tight">
-              Building Tomorrow&apos;s Global Landmarks
+              {content.infra.heroTitle}
             </h1>
             <p className="font-inter text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Raha Infra is a trusted real estate company committed to delivering premium residential and commercial property solutions. With a customer-centric approach and in-depth market expertise, we help individuals, families, and investors find the right property that matches their needs and long-term goals.
+              {content.infra.heroDesc}
             </p>
           </div>
         </header>
@@ -164,14 +166,14 @@ export default function Infra() {
             <p className="font-inter text-sm text-on-surface-variant mb-8 leading-relaxed">
               Connect with our structural engineering team to inquire about commercial leases, residential investments, or customized build-to-suit requests.
             </p>
-            <a href="mailto:info@rahagroup.co.in" className="inline-block bg-black text-white font-inter text-xs font-bold uppercase tracking-widest px-12 py-5 rounded-lg hover:bg-[#735b28] transition-all">
+            <Link href="/contact" className="inline-block bg-black text-white font-inter text-xs font-bold uppercase tracking-widest px-12 py-5 rounded-lg hover:bg-[#735b28] transition-all">
               Inquire Now
-            </a>
+            </Link>
           </div>
         </section>
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }

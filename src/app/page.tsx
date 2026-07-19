@@ -1,10 +1,13 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import VerticalsSlider from "@/components/VerticalsSlider";
+import { getSiteContent } from "@/lib/getContent";
 
 export default function Home() {
+  const content = getSiteContent();
   return (
-    <>
+    <div className="theme-default">
       <Navbar />
 
       {/* ========================================================================= */}
@@ -33,7 +36,7 @@ export default function Home() {
                 Architectural Prestige
               </p>
               <h1 className="font-plus-jakarta text-7xl font-extrabold text-white mb-8 leading-tight">
-                Building Businesses That <br />Shape Tomorrow
+                {content.home.heroTitle}
               </h1>
               <div className="flex gap-4">
                 <Link 
@@ -62,7 +65,7 @@ export default function Home() {
                 Raha Group
               </h2>
               <p className="font-inter text-lg text-on-surface-variant leading-relaxed mb-8">
-                Raha Group is a diversified business group committed to delivering innovative, reliable, and growth-oriented solutions across multiple industries. With a strong focus on technology, education, and real estate, Raha Group has established itself as a trusted partner for businesses and individuals seeking excellence. Our philosophy is built on innovation, integrity, customer satisfaction, and long-term value creation.
+                {content.home.aboutText}
               </p>
               <div className="grid grid-cols-2 gap-6 mt-6">
                 <div>
@@ -121,7 +124,7 @@ export default function Home() {
 
         
         {/* Core Principles (New Section) */}
-        <section className="py-28 px-20 max-w-[1280px] mx-auto border-t border-black/5">
+        <section className="py-28 px-20 max-w-[1280px] mx-auto border-t border-black/5" id="pillars">
           <div className="text-center mb-20 reveal-on-scroll">
             <span className="font-inter text-xs font-bold text-secondary uppercase tracking-widest mb-4 block">GUIDING ETHOS</span>
             <h2 className="font-plus-jakarta text-4xl font-extrabold text-black">Core Principles</h2>
@@ -151,79 +154,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Desktop Verticals Section */}
-        <section id="verticals-desktop" className="bg-[#efeeeb] py-28">
-          <div className="px-20 max-w-[1280px] mx-auto space-y-32">
-            {/* Raha Infra */}
-            <div className="grid grid-cols-12 gap-12 items-center">
-              <div className="col-span-6 rounded-xl overflow-hidden h-[450px] reveal-on-scroll img-zoom-container">
-                <div 
-                  className="w-full h-full bg-cover bg-center" 
-                  style={{ 
-                    backgroundImage: "url('/images/infra.png')",
-                  }}
-                />
-              </div>
-              <div className="col-span-5 col-start-8 reveal-on-scroll">
-                <div className="font-inter text-xs text-secondary font-bold uppercase mb-2">Real Estate</div>
-                <h3 className="font-plus-jakarta text-3xl font-extrabold text-black mb-4">Raha Infra</h3>
-                <p className="font-inter text-base text-on-surface-variant mb-6 leading-relaxed">
-                  Complete real estate solutions for residential and commercial properties, investment advisory, property consulting, and seamless buying &amp; selling assistance.
-                </p>
-                <Link href="/infra" className="group flex items-center font-inter text-sm font-bold text-black">
-                  VIEW SECTOR 
-                  <span className="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
-                </Link>
-              </div>
-            </div>
-
-            {/* Learnixa Education */}
-            <div className="grid grid-cols-12 gap-12 items-center">
-              <div className="col-span-5 reveal-on-scroll">
-                <div className="font-inter text-xs text-secondary font-bold uppercase mb-2">Education</div>
-                <h3 className="font-plus-jakarta text-3xl font-extrabold text-black mb-4">Learnixa Education</h3>
-                <p className="font-inter text-base text-on-surface-variant mb-6 leading-relaxed">
-                  Expert guidance for MBBS in India &amp; Abroad, career counselling, university admissions, documentation, and visa support.
-                </p>
-                <Link href="/learnixa" className="group flex items-center font-inter text-sm font-bold text-black">
-                  EXPLORE SECTOR
-                  <span className="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
-                </Link>
-              </div>
-              <div className="col-span-6 col-start-7 rounded-xl overflow-hidden h-[450px] reveal-on-scroll img-zoom-container">
-                <div 
-                  className="w-full h-full bg-cover bg-center" 
-                  style={{ 
-                    backgroundImage: "url('/images/education_new.png')",
-                  }}
-                />
-              </div>
-            </div>
-
-            {/* Big Think Technology */}
-            <div className="grid grid-cols-12 gap-12 items-center">
-              <div className="col-span-6 rounded-xl overflow-hidden h-[450px] reveal-on-scroll img-zoom-container">
-                <div 
-                  className="w-full h-full bg-cover bg-center" 
-                  style={{ 
-                    backgroundImage: "url('/images/tech.png')",
-                  }}
-                />
-              </div>
-              <div className="col-span-5 col-start-8 reveal-on-scroll">
-                <div className="font-inter text-xs text-secondary font-bold uppercase mb-2">Technology</div>
-                <h3 className="font-plus-jakarta text-3xl font-extrabold text-black mb-4">Big Think Technology</h3>
-                <p className="font-inter text-base text-on-surface-variant mb-6 leading-relaxed">
-                  Innovative digital marketing solutions including social media marketing, performance ads, branding, website development, and lead generation.
-                </p>
-                <Link href="/bigthink" className="group flex items-center font-inter text-sm font-bold text-black">
-                  LEARN MORE
-                  <span className="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Desktop Verticals Slider Section */}
+        <VerticalsSlider />
 
         {/* Desktop Process Section */}
         <section className="py-28 px-20 max-w-[1280px] mx-auto overflow-hidden">
@@ -267,14 +199,14 @@ export default function Home() {
 
         
         {/* Strategic Market Opportunities (New Section) */}
-        <section className="py-28 bg-[#1a1c1a] text-white">
+        <section className="py-28 bg-[#1a1c1a] text-white" id="presence">
           <div className="px-20 max-w-[1280px] mx-auto grid grid-cols-12 gap-12">
             <div className="col-span-4">
               <h2 className="font-plus-jakarta text-4xl font-extrabold mb-8 leading-tight text-white">Strategic Market Opportunities</h2>
               <p className="font-inter text-base text-white/70 mb-10 leading-relaxed">
                 Identifying high-growth sectors where Raha&apos;s structural excellence creates outsized value.
               </p>
-              <Link href="/#contact" className="text-[#fedb9c] font-inter text-sm font-bold border-b border-[#fedb9c] pb-1 hover:text-white transition-colors">
+              <Link href="/contact" className="text-[#fedb9c] font-inter text-sm font-bold border-b border-[#fedb9c] pb-1 hover:text-white transition-colors">
                 Request Insight Report
               </Link>
             </div>
@@ -305,7 +237,7 @@ export default function Home() {
         </section>
 
         {/* Desktop Goals Section */}
-        <section className="bg-black text-white py-28">
+        <section className="bg-black text-white py-28" id="governance">
           <div className="px-20 max-w-[1280px] mx-auto grid grid-cols-12 gap-12">
             <div className="col-span-5 text-white">
               <p className="font-inter text-xs font-bold text-[#fedb9c] mb-4 uppercase tracking-[0.2em]">Our Goals</p>
@@ -401,7 +333,7 @@ export default function Home() {
         </section>
 
         {/* Desktop Leadership Section */}
-        <section className="py-28 px-20 max-w-[1280px] mx-auto">
+        <section className="py-28 px-20 max-w-[1280px] mx-auto" id="investor">
           <div className="grid grid-cols-12 gap-12 items-center">
             <div className="col-span-5 relative">
               <div className="aspect-[4/5] rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-xl">
@@ -449,7 +381,7 @@ export default function Home() {
             </p>
             <div className="flex gap-4 justify-center">
               <a 
-                href="mailto:info@rahagroup.co.in" 
+                href="mailto:Rahagroupadmin@gmail.com" 
                 className="bg-[#fedb9c] text-black px-10 py-4 rounded-lg font-inter text-sm font-bold hover:scale-105 transition-all text-center"
               >
                 Start a Conversation
@@ -490,7 +422,7 @@ export default function Home() {
                 Architectural Prestige
               </span>
               <h1 className="font-plus-jakarta text-4xl font-extrabold text-white mb-12 leading-tight">
-                Building Businesses That <br /> Shape Tomorrow
+                {content.home.heroTitle}
               </h1>
               <div className="flex flex-col gap-4">
                 <Link 
@@ -642,6 +574,25 @@ export default function Home() {
                   Innovative digital marketing solutions including social media marketing, performance ads, branding, website development, and lead generation.
                 </p>
                 <Link href="/bigthink" className="inline-flex items-center gap-2 text-[#735b28] font-bold font-inter uppercase text-xs tracking-widest">
+                  View Sector <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                </Link>
+              </div>
+            </div>
+            {/* Raha Energy */}
+            <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div 
+                className="h-64 w-full bg-cover bg-center"
+                style={{
+                  backgroundImage: "url('/images/energy_hero.png')",
+                }}
+              />
+              <div className="p-8">
+                <div className="font-inter text-xs text-[#735b28] font-bold uppercase mb-2">Energy</div>
+                <h3 className="font-plus-jakarta text-xl font-bold text-black mb-3">Raha Energy</h3>
+                <p className="font-inter text-sm text-on-surface-variant mb-6 leading-relaxed">
+                  Deploying utility-scale solar installations and advanced EV charging infrastructure across India to power the future with clean integrity and accelerate green mobility.
+                </p>
+                <Link href="/energy" className="inline-flex items-center gap-2 text-[#735b28] font-bold font-inter uppercase text-xs tracking-widest">
                   View Sector <span className="material-symbols-outlined text-sm">arrow_forward</span>
                 </Link>
               </div>
@@ -851,7 +802,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col gap-4">
               <a 
-                href="mailto:info@rahagroup.co.in" 
+                href="mailto:Rahagroupadmin@gmail.com" 
                 className="bg-[#fedb9c] text-black px-8 py-4 rounded-lg font-bold font-inter uppercase text-xs tracking-widest text-center"
               >
                 Start a Conversation
@@ -888,8 +839,8 @@ export default function Home() {
                   <span className="material-symbols-outlined text-[#735b28] text-2xl">mail</span>
                   <div>
                     <h4 className="font-plus-jakarta text-sm font-bold text-black uppercase tracking-wider mb-1">Inquiries &amp; Support</h4>
-                    <a href="mailto:info@rahagroup.co.in" className="font-inter text-sm text-[#735b28] hover:underline font-medium">
-                      info@rahagroup.co.in
+                    <a href="mailto:Rahagroupadmin@gmail.com" className="font-inter text-sm text-[#735b28] hover:underline font-medium">
+                      Rahagroupadmin@gmail.com
                     </a>
                   </div>
                 </div>
@@ -901,6 +852,16 @@ export default function Home() {
                     <a href="tel:+918651201033" className="font-inter text-sm text-[#735b28] hover:underline font-medium">
                       +91 8651201033
                     </a>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 items-start">
+                  <span className="material-symbols-outlined text-[#735b28] text-2xl">location_on</span>
+                  <div>
+                    <h4 className="font-plus-jakarta text-sm font-bold text-black uppercase tracking-wider mb-1">Office Address</h4>
+                    <p className="font-inter text-sm text-[#735b28] font-medium leading-relaxed">
+                      A-42, Street No. 2, Near Bikaner Sweet Corner, Nirman Vihar, Delhi
+                    </p>
                   </div>
                 </div>
               </div>
@@ -997,6 +958,6 @@ export default function Home() {
       </section>
 
       <Footer />
-    </>
+    </div>
   );
 }

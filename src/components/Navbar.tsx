@@ -68,16 +68,14 @@ export default function Navbar() {
 
   const currentLogo = getLogoDetails();
 
-  // ONLY the homepage has a transparent background that transitions to white on scroll.
-  // All other pages show a solid white header with dark text for absolute visibility.
-  const isHomepage = pathname === "/";
-  const shouldShowScrolled = scrolled || !isHomepage;
+  // Force solid white header on all pages, including the homepage, for absolute logo and nav link visibility.
+  const shouldShowScrolled = true;
 
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-500 border-b ${
         shouldShowScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-sm py-4 border-black/5"
+          ? "bg-white/95 backdrop-blur-md shadow-sm py-4 border-primary/5"
           : "bg-transparent py-6 border-white/10"
       }`}
     >
@@ -100,7 +98,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`font-inter text-sm font-semibold pb-1 border-b-2 transition-all duration-300 ${
                   isActive
-                    ? shouldShowScrolled ? "border-black text-black" : "border-white text-white"
+                    ? shouldShowScrolled ? "border-primary text-primary" : "border-white text-white"
                     : "border-transparent hover:text-secondary " + (shouldShowScrolled ? "text-[#444748]" : "text-white/80")
                 }`}
               >
@@ -112,22 +110,22 @@ export default function Navbar() {
 
         {/* Action Button & Mobile Menu Toggle */}
         <div className="flex items-center gap-4">
-          <a
-            href="/#contact"
+          <Link
+            href="/contact"
             className={`hidden sm:inline-block px-6 py-2.5 rounded-lg font-inter text-sm font-semibold transition-all ${
               shouldShowScrolled
-                ? "bg-black text-white hover:bg-black/90"
-                : "bg-white text-black hover:bg-white/90"
+                ? "bg-primary text-white hover:bg-primary/90"
+                : "bg-white text-primary hover:bg-white/90"
             }`}
           >
             Contact Us
-          </a>
+          </Link>
           
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden flex items-center justify-center p-2 rounded-lg"
           >
-            <span className={`material-symbols-outlined text-[28px] ${shouldShowScrolled ? "text-black" : "text-white"}`}>
+            <span className={`material-symbols-outlined text-[28px] ${shouldShowScrolled ? "text-primary" : "text-white"}`}>
               {mobileMenuOpen ? "close" : "menu"}
             </span>
           </button>
@@ -136,14 +134,14 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-black/5 flex flex-col p-6 gap-4 shadow-lg animate-fade-up">
+        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-primary/5 flex flex-col p-6 gap-4 shadow-lg animate-fade-up">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
               className={`font-inter text-base font-semibold py-2 transition-colors ${
-                pathname === link.href ? "text-[#735b28]" : "text-black"
+                pathname === link.href ? "text-[#735b28]" : "text-primary"
               }`}
             >
               {link.name}

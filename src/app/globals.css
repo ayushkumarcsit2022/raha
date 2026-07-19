@@ -1,15 +1,63 @@
 @import "tailwindcss";
 
+:root {
+  /* Default/Raha Group: Bronze/Gold. No pure black: using #1c180e */
+  --primary-text: #1c180e;
+  --secondary-accent: #735b28;
+  --secondary-container: #fedb9c;
+  --dark-bg: #1c180e;
+  --dark-border: rgba(28, 24, 14, 0.05);
+}
+
+.theme-infra {
+  /* Raha Infra: Deep Blue/Navy. No pure black: using #0d1726 */
+  --primary-text: #0d1726;
+  --secondary-accent: #1b365d;
+  --secondary-container: #b3cde3;
+  --dark-bg: #0d1726;
+  --dark-border: rgba(13, 23, 38, 0.05);
+}
+
+.theme-energy {
+  /* Raha Energy: Forest Green/Solar Gold. No pure black: using #0a1c11 */
+  --primary-text: #0a1c11;
+  --secondary-accent: #0f5132;
+  --secondary-container: #a3cfbb;
+  --dark-bg: #0a1c11;
+  --dark-border: rgba(10, 28, 17, 0.05);
+}
+
+.theme-learnixa {
+  /* Learnixa EdTech: Deep Purple/Indigo. No pure black: using #120a21 */
+  --primary-text: #120a21;
+  --secondary-accent: #4b2e83;
+  --secondary-container: #e8dbfc;
+  --dark-bg: #120a21;
+  --dark-border: rgba(18, 10, 33, 0.05);
+}
+
+.theme-bigthink {
+  /* Big Think Technology: Deep Slate Blue/Teal. No pure black: using #08171d */
+  --primary-text: #08171d;
+  --secondary-accent: #005f73;
+  --secondary-container: #94d2bd;
+  --dark-bg: #08171d;
+  --dark-border: rgba(8, 23, 29, 0.05);
+}
+
 @theme {
   --color-background: #faf9f6;
-  --color-foreground: #1a1c1a;
+  --color-foreground: var(--primary-text);
   
-  --color-primary: #000000;
+  --color-black: var(--primary-text);
+  --color-primary: var(--primary-text);
   --color-on-primary: #ffffff;
-  --color-secondary: #735b28;
-  --color-secondary-container: #fedb9c;
+  --color-secondary: var(--secondary-accent);
+  --color-secondary-container: var(--secondary-container);
+  --color-dark-bg: var(--dark-bg);
+  --color-dark-border: var(--dark-border);
   --color-surface: #faf9f6;
-  --color-on-surface: #1a1c1a;
+  --color-on-surface: var(--primary-text);
   --color-on-surface-variant: #444748;
   
   --font-plus-jakarta: "Plus Jakarta Sans", sans-serif;
@@ -89,4 +137,56 @@ body {
 .img-zoom-container:hover .bg-cover,
 .img-zoom-container:hover div[style*="background-image"] {
   transform: scale(1.06) !important;
+}
+
+/* Redefine arbitrary hex colors globally using CSS attribute selectors to support page-specific themes */
+[class*="text-[#735b28]"] {
+  color: var(--secondary-accent) !important;
+}
+[class*="bg-[#735b28]"] {
+  background-color: var(--secondary-accent) !important;
+}
+[class*="border-[#735b28]"] {
+  border-color: var(--secondary-accent) !important;
+}
+[class*="focus:border-[#735b28]"]:focus {
+  border-color: var(--secondary-accent) !important;
+}
+[class*="focus:ring-[#735b28]"]:focus {
+  --tw-ring-color: var(--secondary-accent) !important;
+}
+[class*="hover:bg-[#735b28]"]:hover {
+  background-color: var(--secondary-accent) !important;
+}
+
+[class*="text-[#fedb9c]"] {
+  color: var(--secondary-container) !important;
+}
+[class*="bg-[#fedb9c]"] {
+  background-color: var(--secondary-container) !important;
+}
+[class*="border-[#fedb9c]"] {
+  border-color: var(--secondary-container) !important;
+}
+
+[class*="text-[#bac7e2]"] {
+  color: var(--secondary-container) !important;
+}
+
+/* Redefine hardcoded dark backgrounds to map to active theme dark background */
+[class*="bg-[#0e1c30]"] {
+  background-color: var(--dark-bg) !important;
+}
+[class*="bg-[#1a1c1a]"] {
+  background-color: var(--dark-bg) !important;
+}
+[class*="bg-[#0a1120]"] {
+  background-color: var(--dark-bg) !important;
+}
+[class*="bg-[#2f312f]"] {
+  background-color: var(--dark-bg) !important;
+}
+
+footer {
+  background-color: #261f10 !important;
 }

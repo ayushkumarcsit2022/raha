@@ -1,10 +1,12 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { getSiteContent } from "@/lib/getContent";
 
 export default function Learnixa() {
+  const content = getSiteContent();
   return (
-    <>
+    <div className="theme-learnixa">
       <Navbar />
       
       <main className="pt-24 md:pt-32">
@@ -12,12 +14,12 @@ export default function Learnixa() {
         <section className="px-6 md:px-20 max-w-[1280px] mx-auto mb-20 md:mb-28 overflow-hidden animate-fade-up">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-7">
-              <p className="font-inter text-xs font-bold text-secondary uppercase mb-4 tracking-[0.2em]">Learnixa Education</p>
+              <p className="font-inter text-xs font-bold text-secondary uppercase mb-4 tracking-[0.2em]">{content.learnixa.heroTagline}</p>
               <h1 className="font-plus-jakarta text-4xl md:text-6xl font-extrabold leading-none mb-8 text-black">
-                Study Abroad &amp; Career Guidance
+                {content.learnixa.heroTitle}
               </h1>
               <p className="font-inter text-base md:text-lg text-on-surface-variant max-w-xl leading-relaxed">
-                At Learnixa Education, we are committed to helping students achieve their academic and career goals by providing trusted guidance for higher education in India and abroad.
+                {content.learnixa.heroDesc}
               </p>
             </div>
             
@@ -107,14 +109,14 @@ export default function Learnixa() {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <a href="mailto:info@rahagroup.co.in" className="inline-block bg-black text-white font-inter text-xs font-bold uppercase tracking-widest px-12 py-5 rounded-lg hover:bg-[#735b28] transition-all">
+            <Link href="/contact" className="inline-block bg-black text-white font-inter text-xs font-bold uppercase tracking-widest px-12 py-5 rounded-lg hover:bg-[#735b28] transition-all">
               Partner Inquiry
-            </a>
+            </Link>
           </div>
         </section>
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }
