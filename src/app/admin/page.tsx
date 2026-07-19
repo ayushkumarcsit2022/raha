@@ -48,6 +48,11 @@ export default function AdminPage() {
       heroTitle: "",
       heroTagline: "",
       heroDesc: ""
+    },
+    energyContact: {
+      hotline: "",
+      email: "",
+      address: ""
     }
   });
 
@@ -380,6 +385,42 @@ export default function AdminPage() {
                       className="w-full bg-[#efeeeb]/20 border border-primary/10 rounded-lg px-4 py-3.5 font-inter text-xs text-primary focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all"
                     />
                   </div>
+
+                  {/* Noida branch details specifically for Energy Tab */}
+                  {activeTab === "energy" && content.energyContact && (
+                    <div className="border-t border-primary/5 pt-6 mt-6 space-y-6">
+                      <h4 className="font-plus-jakarta text-xs font-bold text-secondary uppercase tracking-widest">Noida EV Charging Hotline & Office Settings</h4>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                          <label className="block font-inter text-xs text-primary font-bold mb-2">EV Charging Hotline</label>
+                          <input 
+                            type="text" 
+                            value={content.energyContact.hotline}
+                            onChange={(e) => handleInputChange("energyContact", "hotline", e.target.value)}
+                            className="w-full bg-[#efeeeb]/20 border border-primary/10 rounded-lg px-4 py-3.5 font-inter text-xs text-primary focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all"
+                          />
+                        </div>
+                        <div>
+                          <label className="block font-inter text-xs text-primary font-bold mb-2">EV Inquiries Email</label>
+                          <input 
+                            type="email" 
+                            value={content.energyContact.email}
+                            onChange={(e) => handleInputChange("energyContact", "email", e.target.value)}
+                            className="w-full bg-[#efeeeb]/20 border border-primary/10 rounded-lg px-4 py-3.5 font-inter text-xs text-primary focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <label className="block font-inter text-xs text-primary font-bold mb-2">EV Office Address</label>
+                        <input 
+                          type="text" 
+                          value={content.energyContact.address}
+                          onChange={(e) => handleInputChange("energyContact", "address", e.target.value)}
+                          className="w-full bg-[#efeeeb]/20 border border-primary/10 rounded-lg px-4 py-3.5 font-inter text-xs text-primary focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all"
+                        />
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
 

@@ -9,7 +9,7 @@
     "copyrightText": "© 2026 Raha Group. All rights reserved. Architectural Prestige in Motion."
   },
   "home": {
-    "heroTitle": "Building Businesses That Shape Tomorrow",
+    "heroTitle": "Building Businesses That Shape Tomorrow ",
     "heroSubtitle": "A global conglomerate dedicated to industrial prestige and architectural excellence across the physical and digital world.",
     "aboutTitle": "Architectural Prestige",
     "aboutText": "We believe in long-term value creation. Our companies operate across physical infrastructure, clean energy grids, career education, and bespoke software automation, establishing standards of stability and compliance."
@@ -33,5 +33,10 @@
     "heroTitle": "Innovating Today, Empowering Tomorrow",
     "heroTagline": "Big Think Technology",
     "heroDesc": "We deliver innovative IT and digital solutions that help startups, SMEs, and global enterprises accelerate digital transformation, optimize processes, and scale with confidence."
+  },
+  "energyContact": {
+    "hotline": "7291002205",
+    "email": "info@vixonenergy.com",
+    "address": "I-Thum Tower B, Sector 62, Noida, Uttar Pradesh – 201301, India"
   }
 }

@@ -1,7 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { getSiteContent } from "@/lib/getContent";
 
 export default function ContactPage() {
+  const content = getSiteContent();
   return (
     <div className="theme-default min-h-screen bg-background text-primary">
       <Navbar />
@@ -33,19 +35,19 @@ export default function ContactPage() {
                 <div className="space-y-3 pt-2">
                   <p className="flex items-start gap-3 font-inter text-xs text-on-surface-variant leading-relaxed">
                     <span className="material-symbols-outlined text-secondary text-[18px] mt-0.5">location_on</span>
-                    <span>A-42, Street No. 2, Near Bikaner Sweet Corner, Nirman Vihar, Delhi</span>
+                    <span>{content.footer.delhiAddress}</span>
                   </p>
                   <p className="flex items-center gap-3 font-inter text-xs text-on-surface-variant">
                     <span className="material-symbols-outlined text-secondary text-[18px]">mail</span>
-                    <a href="mailto:Rahagroupadmin@gmail.com" className="hover:text-secondary transition-colors">Rahagroupadmin@gmail.com</a>
+                    <a href={`mailto:${content.footer.delhiEmail}`} className="hover:text-secondary transition-colors">{content.footer.delhiEmail}</a>
                   </p>
                   <p className="flex items-center gap-3 font-inter text-xs text-on-surface-variant">
                     <span className="material-symbols-outlined text-secondary text-[18px]">phone</span>
-                    <a href="tel:+918651201033" className="hover:text-secondary transition-colors">+91 8651201033</a>
+                    <a href={`tel:${content.footer.delhiPhone}`} className="hover:text-secondary transition-colors">{content.footer.delhiPhone}</a>
                   </p>
                   <p className="flex items-center gap-3 font-inter text-xs text-on-surface-variant">
                     <span className="material-symbols-outlined text-secondary text-[18px]">public</span>
-                    <a href="https://www.rahagroup.co.in" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors">www.rahagroup.co.in</a>
+                    <a href={`https://${content.footer.delhiWeb}`} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors">{content.footer.delhiWeb}</a>
                   </p>
                 </div>
               </div>
@@ -58,15 +60,15 @@ export default function ContactPage() {
                 <div className="space-y-3 pt-2">
                   <p className="flex items-start gap-3 font-inter text-xs text-on-surface-variant leading-relaxed">
                     <span className="material-symbols-outlined text-secondary text-[18px] mt-0.5">location_on</span>
-                    <span>I-Thum Tower B, Sector 62, Noida, Uttar Pradesh – 201301, India</span>
+                    <span>{content.energyContact?.address || "I-Thum Tower B, Sector 62, Noida, Uttar Pradesh – 201301, India"}</span>
                   </p>
                   <p className="flex items-center gap-3 font-inter text-xs text-on-surface-variant">
                     <span className="material-symbols-outlined text-secondary text-[18px]">mail</span>
-                    <a href="mailto:info@vixonenergy.com" className="hover:text-secondary transition-colors">info@vixonenergy.com</a>
+                    <a href={`mailto:${content.energyContact?.email || "info@vixonenergy.com"}`} className="hover:text-secondary transition-colors">{content.energyContact?.email || "info@vixonenergy.com"}</a>
                   </p>
                   <p className="flex items-center gap-3 font-inter text-xs text-on-surface-variant">
                     <span className="material-symbols-outlined text-secondary text-[18px]">phone</span>
-                    <a href="tel:7291002205" className="hover:text-secondary transition-colors">7291002205</a>
+                    <a href={`tel:${content.energyContact?.hotline || "7291002205"}`} className="hover:text-secondary transition-colors">{content.energyContact?.hotline || "7291002205"}</a>
                   </p>
                 </div>
               </div>

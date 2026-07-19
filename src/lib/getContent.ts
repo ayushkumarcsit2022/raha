@@ -38,6 +38,11 @@ const defaultContent = {
     heroTitle: "Innovating Today, Empowering Tomorrow",
     heroTagline: "Big Think Technology",
     heroDesc: "We deliver innovative IT and digital solutions that help startups, SMEs, and global enterprises accelerate digital transformation, optimize processes, and scale with confidence."
+  },
+  energyContact: {
+    hotline: "7291002205",
+    email: "info@vixonenergy.com",
+    address: "I-Thum Tower B, Sector 62, Noida, Uttar Pradesh – 201301, India"
   }
 };
 

@@ -298,14 +298,14 @@ export default function Energy() {
                   <span className="material-symbols-outlined text-secondary text-2xl">call</span>
                   <div>
                     <h5 className="font-plus-jakarta text-xs font-bold text-primary">Direct Hotline</h5>
-                    <a href="tel:7291002205" className="font-inter text-sm text-on-surface-variant hover:text-secondary">7291002205</a>
+                    <a href={`tel:${content.energyContact?.hotline || "7291002205"}`} className="font-inter text-sm text-on-surface-variant hover:text-secondary">{content.energyContact?.hotline || "7291002205"}</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <span className="material-symbols-outlined text-secondary text-2xl">mail</span>
                   <div>
                     <h5 className="font-plus-jakarta text-xs font-bold text-primary">Inquiries</h5>
-                    <a href="mailto:info@vixonenergy.com" className="font-inter text-sm text-on-surface-variant hover:text-secondary">info@vixonenergy.com</a>
+                    <a href={`mailto:${content.energyContact?.email || "info@vixonenergy.com"}`} className="font-inter text-sm text-on-surface-variant hover:text-secondary">{content.energyContact?.email || "info@vixonenergy.com"}</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -313,7 +313,7 @@ export default function Energy() {
                   <div>
                     <h5 className="font-plus-jakarta text-xs font-bold text-primary">Office Address</h5>
                     <p className="font-inter text-sm text-on-surface-variant leading-relaxed">
-                      I-Thum Tower B, Sector 62, Noida, Uttar Pradesh – 201301, India
+                      {content.energyContact?.address || "I-Thum Tower B, Sector 62, Noida, Uttar Pradesh – 201301, India"}
                     </p>
                   </div>
                 </div>
